@@ -61,8 +61,8 @@ The **Bayesian Neural Network (BNN)** model was trained to classify GPA categori
 The **Bayesian Neural Network (BNN)** model was trained to predict exact GPA values. 
 
 - **Key Metrics**:
-  - **Mean Absolute Error (MAE)**: `0.1590`
-  - **R² Score**: `0.9537`
+  - **Mean Absolute Error (MAE)**: `0.16`
+  - **R² Score**: `0.95`
   
   These metrics suggest the model predicts GPA values with high accuracy. The **MAE** of 0.1590 means that, on average, the model's predictions are off by only about 0.16 GPA points. The **R² score** of 0.9537 indicates that 95.37% of the variance in GPA is explained by the model, reflecting a strong fit and predictive power.
 
