@@ -27,7 +27,7 @@ This repository contains three main Jupyter notebooks for preprocessing data, tr
    - **Data Loading**: Loads the preprocessed `.pkl` files.
    - **Data Splitting**: The data is split into training and testing sets (80/20) to evaluate the model's performance. 
    - **Model Construction**: Builds a BNN model suitable for classification.
-   - **Training**: Trains the model on the classification task, predicting GPA categories (1-4).
+   - **Training**: Trains the model on the classification task, predicting GPA categories (0-4).
    - **Evaluation**: Evaluates the model performance on the test data, reporting metrics like accuracy, confusion matrix, and classification report.
 
 ### 3. **Model_BNN_regression.ipynb**
@@ -40,4 +40,29 @@ This repository contains three main Jupyter notebooks for preprocessing data, tr
 
 The project showcases the benefits of using a **Bayesian Neural Network** (BNN), which provides a measure of uncertainty in the predictions. This is particularly useful for regression and classification tasks where uncertainty quantification is important.
 
+## Results
 
+### Classification
+
+The **Bayesian Neural Network (BNN)** model was trained to classify GPA categories (0-4). 
+
+- **Confusion Matrix**: The confusion matrix indicates:
+  - **Class 0**: 33.33% accuracy, with confusion across Classes 1, 3, and 4.
+  - **Class 1**: High accuracy, but confusion with Classes 0, 2, and 4.
+  - **Class 2**: Moderate performance, confusion mostly with Class 3.
+  - **Class 3**: Strong accuracy, but confusion with Class 2.
+  - **Class 4**: Highest accuracy, with minor confusion with Class 3.
+  
+  These misclassifications are due to the continuous nature of GPA categories that overlap in their features.
+
+### Regression
+
+The **Bayesian Neural Network (BNN)** model was trained to predict exact GPA values. 
+
+- **Key Metrics**:
+  - **Mean Absolute Error (MAE)**: `0.1590`
+  - **R² Score**: `0.9537`
+  
+  These metrics suggest the model predicts GPA values with high accuracy. The **MAE** of 0.1590 means that, on average, the model's predictions are off by only about 0.16 GPA points. The **R² score** of 0.9537 indicates that 95.37% of the variance in GPA is explained by the model, reflecting a strong fit and predictive power.
+
+---
