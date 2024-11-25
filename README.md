@@ -46,12 +46,13 @@ The project showcases the benefits of using a **Bayesian Neural Network** (BNN),
 
 The **Bayesian Neural Network (BNN)** model was trained to classify GPA categories (0-4). 
 
+- **Accuracy**: around 72%
 - **Confusion Matrix**: The confusion matrix indicates:
-  - **Class 0**: 33.33% accuracy, with confusion across Classes 1, 3, and 4.
-  - **Class 1**: High accuracy, but confusion with Classes 0, 2, and 4.
-  - **Class 2**: Moderate performance, confusion mostly with Class 3.
-  - **Class 3**: Strong accuracy, but confusion with Class 2.
-  - **Class 4**: Highest accuracy, with minor confusion with Class 3.
+  - **Class 0**: The model correctly identifies a significant portion of Class 0 samples, but there is notable confusion with Classes 1, 3, and 4.
+  - **Class 1**: The model performs reasonably well for Class 1, but confusion still occurs with Classes 0, 2, and 4, suggesting overlapping characteristics between these classes.
+  - **Class 2**: Class 2 performs well but experiences confusion with Class 3, indicating some overlap in the features of these classes.
+  - **Class 3**: Strong performance is seen for Class 3, though confusion with Class 2 remains.
+  - **Class 4**: The highest classification accuracy is observed for Class 4, but some confusion arises with Class 3.
   
   These misclassifications are due to the continuous nature of GPA categories that overlap in their features.
 
