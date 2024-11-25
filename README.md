@@ -9,9 +9,9 @@ The data used in this project is from the following source:
 - **Rabie El Kharoua. (2024).** 📚 Students Performance Dataset 📚 [Data set]. Kaggle. [https://doi.org/10.34740/KAGGLE/DS/5195702](https://doi.org/10.34740/KAGGLE/DS/5195702)
 
 
-This repository contains three main Jupyter notebooks that help in preprocessing data, training models, and evaluating results.
-
 ## Notebooks in the Project
+
+This repository contains three main Jupyter notebooks for preprocessing data, training models, and evaluating results.
 
 ### 1. **data_preprocessing.ipynb**
    This notebook handles the preprocessing of the raw data and prepares it for use in the BNN models.
